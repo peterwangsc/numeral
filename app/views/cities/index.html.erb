@@ -1,0 +1,11 @@
+<h1>Hello world!</h1>
+<%= @c.lon %>
+<%= @c.lat %>
+<%= @c.temp %>
+
+<% @cities.each do |city| %>
+    <%= city.name %>
+    <form action="/cities/<%= city.id %>" method="delete">
+        <button type="submit">delete</button>
+    </form>
+<% end %>
