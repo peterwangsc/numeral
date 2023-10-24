@@ -46,6 +46,7 @@ class CitiesController < ApplicationController
   end
 
   def show
+    # foo
     @city = City.find(params[:id])
   end
 
